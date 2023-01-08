@@ -1,0 +1,10 @@
+services:
+  mysql-server-80:
+    image: mysql/mysql-server:8.0
+    environment:
+      MYSQL_DATABASE: myDb
+      MYSQL_USER: Nik
+      MYSQL_PASSWORD: 97
+    restart: always
+    ports:
+      - 3306:3306
